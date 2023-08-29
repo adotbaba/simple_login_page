@@ -1,0 +1,124 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compactible">
+	<meta name="viewport"content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+	integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Login Page</title>
+	<style>
+
+		/*GENERAL RESET*/
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		/*LOGIN PAGE SYLING*/
+		.wrapper{
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: rgb(242, 242, 242);
+		}
+		.form {
+			width: 320px;
+			padding: 40px 30px;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			background-color: white;
+			box-shadow: 0px 0px 15px -10px rgb(0, 0, 0, 0.75);
+		}
+		
+		.form-title {
+			margin-bottom: 20px;
+			font-size: 25px;
+		}
+
+		.black-box {
+			margin-bottom: 50px;
+			font-size: 30px;
+			font-weight: bold;
+			color: #fff;
+			background-color: black;
+			border-radius: 5px;
+			width: 40px;
+			text-align: center;
+		}
+
+		.input {
+			width: 100%;
+			padding: 10px 0px;
+			border: none;
+			}
+
+		.email-input {
+			border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+		}
+
+		.password-wrapper {
+			width: 100%;
+			margin: 30px 0px;
+			border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+			display: flex;
+			align-items: flex-end;
+		}
+		
+		.icon {
+			font-size: 10px;
+			margin-bottom: 10px;
+		}
+
+		.login-button {
+			border: none;
+			width: 100%;
+			padding: 10px 0px;
+			color: #fff;
+			border-radius: 100vmax;
+			background-image: linear-gradient(to right, #00c6ff, #bd2eff);
+			cursor: pointer;
+			margin-bottom: 80px;
+		}
+
+		.text-wrapper {
+			display: flex;	
+		}
+
+		.faded-text {
+			opacity: 0.7;
+			font-size: 14px;
+		}
+
+		.link {
+			font-weight: bold;
+			color: black;
+			text-decoration: none;
+		}
+
+		
+	</style>
+</head>
+<body>
+		<div class="wrapper">
+			<form class="form">
+			<h1 class="form-title">Welcome</h1>
+			<div class="black-box">A</div>
+			<input class="input email-input" type="email" placeholder="Enter">
+			<div class="password-wrapper">
+				<input class="input" type="password" placeholder="Password">
+				<span class="icon"><i class="fa fa-eye" aria-hidden="true"></i></span>
+			</div>
+			<button class="login-button">Login</button>
+			<div class="text-wrapper">
+				<p class="faded-text">Don't have an account?</p>
+					<a class="link" href="/register">Sign Up</a>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
